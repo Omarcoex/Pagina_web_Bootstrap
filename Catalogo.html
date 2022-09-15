@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- JavaScript Bundle with Popper -->
+  </head>
+
+  <body>
+    <div class="container-fluid border border-dark">
+      <div class="row">
+        <!-- Cabecera de la pagina -->
+        <header class="container-fluid p-4 bg-info">
+          <div class="row d-flex justify-content-around align-items-center">
+            <div
+              class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12 text-center"
+            >
+              <img
+                src="./image/logo.jpg"
+                alt=""
+                style="height: 150px; width: 150px"
+              />
+            </div>
+            <div
+              class="efecto col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12 h1 text-white text-center"
+            >
+              <h1><span>Catálogo de productos en CalzaSuper</span></h1>
+            </div>
+            <div
+              class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 fs-4 text-white text-center"
+            >
+              <i class="bi bi-telephone"> 314 5605690</i>
+            </div>
+          </div>
+        </header>
+        <!-- Crear el menu -->
+        <nav class="navbar navbar-expand-lg bg-light position-relative">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><i class="bi bi-house-fill"></i
+            ></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#somos">¿Quiénes somos?</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Servicios
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./Como_comprar.html"
+                      >¿Como comprar?</a
+                    >
+                    <a class="dropdown-item" href="./Donde_nos_encuentra.html"
+                      >Donde nos encuentra</a
+                    >
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./Catalogo.html">Catalogo</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ingreso.html">Ingresar</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Carrusel presentacion de imagenes -->
+        <div
+          class="container my-5 d-flex justify-content-center w-50"
+          style="overflow: hidden"
+        >
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner w-100">
+              <div class="carousel-item">
+                <img
+                  src="./image/03 pareja.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./image/04 grupo.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./image/05 elegante H.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item active">
+                <img
+                  src="./image/06 Dama modelo.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cuerpo de paginga -->
+
+    <main class="container">
+      <div class="row">
+        <div
+          class="mt-5 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3"
+        >
+          <div class="">
+            <div class="accordion open" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed bg-info text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    MISION
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                  style=""
+                >
+                  <div class="accordion-body">
+                    Nuestra misión empresarial es construir una relación de
+                    confianza con los clientes que requieran elegancia y
+                    variedad en calzado formal e informal, marroquineria,
+                    indumentaria y accesoridivos, para damas, hombres y niños de
+                    todas las edades, ofreciendo productos de calidad, a precios
+                    justos, con las mejores condiciones de pago y excelente
+                    servicio de atención por parte de sus dueños y empleados
+                    capacitados. todo ello nos permite seguir creciendo en el
+                    tiempo de manera sostenida y reafirmar la permanencia de
+                    nuestra empresa familiar centenaria en el mercado
+                    paranaense, generando un adecuado retorno de la inversión
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed bg-info text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    VISIÓN
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                  style=""
+                >
+                  <div class="accordion-body">
+                    Será en el futuro una empresa familiar consolidada, con
+                    personal profesionalizado y un proceso organizativo
+                    fortalecido y afianzado en todas las áreas, que
+                    comercializará en Paraná y en nuevos mercados a través de
+                    las actuales y nuevas sucursales ubicadas estratégicamente,
+                    cumpliendo con la plena satisfacción del cliente y una
+                    política de responsabilidad, respeto y cumplimiento hacia
+                    los proveedores y empleados.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button text-white bg-info"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="true"
+                    aria-controls="collapseThree"
+                  >
+                    VALORES
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                  style=""
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Innovación</li>
+                      <li>Responsabilidad Social.</li>
+                      <li>Confianza</li>
+                      <li>Respeto</li>
+                      <li>Crecimiento Sostenido.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 text-center">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Comprar
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      HAZ TU COMPRA
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Solo se puede realizar comprar a Nequi,Daviplata,Cuenta
+                      corriente o de ahorros <br />
+                      Ahorro Bancolombia 117-83826-48
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancelar
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      <a
+                        class="text-light"
+                        href="https://www.pse.com.co/persona"
+                        >Clic para comprar</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quienes somos -->
+        <!-- <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-9">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="mb-3 text-center text-white" id="somos">
+                ¿Quienes somos?
+              </h2>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12"
+            >
+              <img class="img-fluid" src="./image/01 new balance.jpg" alt="" />
+            </div>
+            <div
+              class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12 text-wrap fs-5 text-white"
+            >
+              <p>
+                Nos orientamos a la producción y comercialización de calzado e
+                indumentaria como unidades básicas de negocio; concebidas para
+                abastecer los diferentes mercados y canales de comercialización.
+                La empresa cuenta con una estructura sectorizada, que de manera
+                conjunta fusiona profesionalismo, capital de trabajo e
+                innovación en el desempeño de las actividades; para brindar
+                garantía de calidad en todos sus desarrollos. El respaldo
+                técnico de nuestro departamento de Investigación y Desarrollo y
+                el centro tecnológico que trabaja bajo normas internacionales,
+                asegura las condiciones indispensables para satisfacer a un
+                amplio y exigente mercado, seccionado por empresas
+                multinacionales.
+              </p>
+            </div>
+          </div>
+        </div> -->
+        <!-- fin quines somos -->
+
+        <div class="container col-12">
+          <div class="row">
+            <div class="listado col-12 text-white">
+              <h1 id="list ">Listado de Obsequios</h1>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img src="./image/Producto 01.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Agregar Carrito</a>
+                <a href="#" class="card-link">Another link</a>
+                <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
+              </div>
+
+              <div class="modal fade col-12" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content col-12">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Detalles del Producto</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body col-12" id="cuerpo">
+                      <div class="col-sm-6">
+                        <img id="img_detalle" src="imagen/alcanciabuena.png">
+                      </div>
+                      <div class="col-sm-6 text-left">
+                       <p>
+                        <i class="icon fa fa-check-square-o"></i>Nombre: Desayuno Sorpresa<br>
+                         <i class="icon fa fa-check-square-o"></i>Espectacular Detalle, Incluye:<br>
+                         <i class="icon fa fa-check-square-o"></i>Delicioso Cupcake decorado<br>
+                         <i class="icon fa fa-check-square-o"></i>Sandwich de Jamón y Queso Importada 710ml<br>
+                         <i class=" icon fa fa-check-square-o"></i>Vaso en Cristal con Sticker<br>
+                         <i class="icon fa fa-check-square-o"></i>Caja decorativa<br>
+                         <i class="icon fa fa-check-square-o"></i>Combas<br>
+                         <i class="icon fa fa-check-square-o"></i>Tarjeta personalizada<br>
+                         Valor: 50000<br>
+                       </p>
+                      </div>
+               
+                    </div>
+                    <div id="boton" class="modal-footer text-left">
+                      <input type="submit" value="Volver" id="añadir al Carrito" class="btn btn-primary" data-dismiss="modal" />
+                      <input type="submit" value="Añadri al Carrito" id="" class="btn btn-primary" data-dismiss="modal" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Creacion de las Tarjetas -->
+    <!-- Primera tarjeta -->
+
+    <div class="container">
+      <hr class="hr" />
+    </div>
+    <div class="row d-flex justify-content-center fondo py-3">
+      <div
+        class="mx-2 card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3"
+        style="width: 15rem"
+      >
+        <img
+          src="./image/favorita 01.jpg"
+          class="card-img-top mt-2"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">
+            Tenis Nike Air Force One Jordan Hombre O Mujer.
+          </h5>
+          <p class="card-text text-center">
+            - Modelo: CK2943-100 - Nombre Articulo: Tenis Nike Air Force One
+            Jordan Athletic Footwear - Categoría: Nike Sportswear - Color:
+            White/Black-White - Genero: Hombre
+          </p>
+        </div>
+        <div class="card-foot text-center mb-3">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#tenis"
+          >
+            Comprar
+          </button>
+
+          <!-- Modal comprar tenis-->
+          <div
+            class="modal fade"
+            id="tenis"
+            tabindex="-1"
+            aria-labelledby="adoptar"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="adoptar">Comprar tenis</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Quieres comprar tenis?</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                  <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal comprar-->
+        </div>
+      </div>
+
+      <!-- Tarjeta dos -->
+      <div
+        class="mx-2 card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3"
+        style="width: 15rem"
+      >
+        <img
+          src="./image/favorita 02.jpg"
+          class="card-img-top mt-2"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">Zapatilla Runfalcon.</h5>
+          <p class="card-text text-center">
+            -Un diseño versátil para jóvenes deportistas con objetivos
+            ambiciosos. -Cierre de cordones. -Diseño ligero. -Refuerzo sintético
+            en el mediopié y en el talón. -Incorpora una mediasuela ligera de
+            EVA que te aporta una pisada más cómoda. -Suela de goma.
+          </p>
+        </div>
+        <div class="card-foot text-center mb-3">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#Runfalcon"
+          >
+            Comprar
+          </button>
+
+          <!-- Modal comprar zapatilla-->
+          <div
+            class="modal fade"
+            id="Runfalcon"
+            tabindex="-1"
+            aria-labelledby="adoptar"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="adoptar">Comprar Runfalcon</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Quieres comprar Zapatilla Runfalcon?
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                  <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal comprar-->
+        </div>
+      </div>
+      <!-- Tercera tarjeta -->
+      <div
+        class="mx-2 card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3"
+        style="width: 15rem"
+      >
+        <img
+          src="./image/favorita 03.jpg"
+          class="card-img-top mt-2"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">
+            ZAPATILLA NIKE AIR ZOOM PEGASUS 38 RUNNING CW7358-002 NIKE
+          </h5>
+          <p class="card-text text-center">
+            - Zapatillas de running Nike muy cómodas y ligeras. - Cordones
+            Flywire que nos proporciona un ajuste perfecto. - Parte superior de
+            malla para mejorar la ventilación.
+          </p>
+        </div>
+        <div class="card-foot text-center mb-3">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#PEGASUS"
+          >
+            Comprar
+          </button>
+
+          <!-- Modal comprar ZAPATILLA NIKE AIR ZOOM PEGASUS 38 RUNNING-->
+          <div
+            class="modal fade"
+            id="PEGASUS"
+            tabindex="-1"
+            aria-labelledby="adoptar"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="adoptar">
+                    Comprar ZAPATILLA NIKE AIR ZOOM PEGASUS 38 RUNNING
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Quieres comprar ZAPATILLA NIKE AIR ZOOM PEGASUS 38 RUNNING
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                  <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal ZAPATILLA NIKE AIR ZOOM PEGASUS 38 RUNNING-->
+        </div>
+      </div>
+
+      <div
+        class="mx-2 card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3"
+        style="width: 15rem"
+      >
+        <img
+          src="./image/favorita 04.jpg"
+          class="card-img-top mt-2"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">ZAPATILLAS CASUAL NAUTICA</h5>
+          <p class="card-text">
+            Zapatillas casual Nautica de color blanco con detalles en contraste
+            de color verde. Cierre mediante cordones. Altura de la suela 4 cm.
+          </p>
+        </div>
+        <div class="card-foot text-center mb-3">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#nautica"
+          >
+            comprar
+          </button>
+
+          <!-- Modal comprar nautica -->
+          <div
+            class="modal fade"
+            id="nautica"
+            tabindex="-1"
+            aria-labelledby="adoptar"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="adoptar">
+                    Comprar Zapatilla nautica
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Quieres comprar Zapatilla nautica?</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                  <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal adoptar-->
+        </div>
+      </div>
+    </div>
+    <!-- Contactenos -->
+    <div id="contacto" class="contacto">
+      <hr class="hr" />
+    </div>
+    <div class="container fondo">
+      <!-- Formulario para contacto -->
+      <form>
+        <div class="row text-center">
+          <div
+            class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12"
+          >
+            <h3 class="text-white fw-bolder fs-1">CONTACTANOS</h3>
+          </div>
+          <div class="col-12">
+            <div class="row d-flex justify-content-center">
+              <div
+                class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12"
+              >
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Nombre</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12"
+              >
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    >Apellido</span
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Apellido"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12"
+              >
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Email</span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12"
+              >
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    >Telefono</span
+                  >
+                  <input
+                    type="phone"
+                    class="form-control"
+                    placeholder="Telefono"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="mb-3 form-floating col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12"
+              >
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea"
+                ></textarea>
+                <label for="floatingTextarea">Mensaje</label>
+              </div>
+
+              <div class="mb-3">
+                <button type="submit" class="btn btn-primary">ENVIAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Pie de pagina para informar quien desarrollo la pagina -->
+    <footer>
+      <div class="text-center my-5">
+        <button
+          class="btn btn-light"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom"
+        >
+          Developed By
+        </button>
+
+        <div
+          class="offcanvas offcanvas-bottom"
+          tabindex="-1"
+          id="offcanvasBottom"
+          aria-labelledby="offcanvasBottomLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body small">
+            <p class="fs-3">Desarollado por: © Omar Aleiser Alvarez Laverde</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
